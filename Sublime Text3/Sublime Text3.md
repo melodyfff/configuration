@@ -9,7 +9,8 @@
 		"Vintage"
 	],
 	"spacegray_fileicons": true,
-	"theme": "Spacegray.sublime-theme"
+	"theme": "Spacegray.sublime-theme",
+	"anaconda_linting": false
 }
 ```
 ## keymap:

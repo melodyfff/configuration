@@ -21,3 +21,15 @@
 	{ "keys": ["ctrl+shift+enter"], "command": "open_in_browser" }
 ]
 ```
+
+## Package:
+- AutoFileName
+- Emmet
+- HTMLBeautify
+- Markdown Preview
+- Nodejs
+- Package Control
+- Anaconda
+- ConverToUTF8
+- HTML/CSS/JS Prettify
+- JavaScript Completions

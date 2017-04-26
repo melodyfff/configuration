@@ -32,4 +32,10 @@
 - Anaconda
 - ConverToUTF8
 - HTML/CSS/JS Prettify
+- HTMLBeautify
 - JavaScript Completions
+- CSS Completions
+- jQury
+- Python Pretty Print
+- Theme -Brogrammer
+- Theme -Spacegray

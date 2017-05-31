@@ -1,0 +1,1 @@
+ls /etc/rc$(runlevel|sed 's/N.//').d|awk '!/K/ {print}'|sed 's/S[0-9][0-9]//'

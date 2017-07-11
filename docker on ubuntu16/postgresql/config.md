@@ -1,7 +1,10 @@
-# docker ÉÏÔËĞĞ postgresql
+# docker ä¸Šè¿è¡Œ postgresql
 
-## Ê×ÏÈÈ·±£ ÒÑ¾­ÓĞpostgres¾µÏñ
+## é¦–å…ˆç¡®ä¿ å·²ç»æœ‰postgresé•œåƒ
 sudo docker run --name pg_test -e POSTGRES_PASSWORD=123 -e POSTGRES_USER=postgres -d -p 8090:5432 postgres:9.6
 
-## ·ÃÎÊpostgres
+### æˆ–è€…
+docker run -d --name pgtest -p 8090:5432 -e "POSTGRES_USER=test" -e "POSTGRES_DB=postgres" postgres:9.5
+
+## è®¿é—®postgres
 psql -h localhost -p 8090 -d postgres -U postgres --password

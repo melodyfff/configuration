@@ -12,3 +12,7 @@ psql -h localhost -p 8090 -d postgres -U postgres --password
 
 ## 查看容器内数据文件、配置文件、网络授权文件设置
 sudo docker exec -it 3bf3b533ba05 /bin/bash
+
+## 挂载容器内部数据
+sudo docker run --name ps_test -d -v /opt/data:/var/lib/postgresql/data -p 8090:5432 -e POSTGRES_USER=test -e POSTGRES_DB=sonar 0f3af79d8673
+

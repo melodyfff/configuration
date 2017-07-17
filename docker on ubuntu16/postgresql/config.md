@@ -30,3 +30,7 @@ docker run --rm --volumes-from dbdata -v $(pwd):/backup 0f3af79d8673 tar cvf /ba
 
 ## 查看容器信息
 docker inspect f1c87508fe97
+
+## 容器内外互相拷贝数据
+docker cp foo.txt mycontainer:/foo.txt   
+docker cp mycontainer:/foo.txt foo.txt

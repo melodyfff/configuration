@@ -10,7 +10,3 @@ Sublime Text3配置文件备份
 	"spacegray_fileicons": true,
 	"theme": "Spacegray.sublime-theme"
 }
-
-# Chrome
-- 允许跨域 "..\chrome.exe" --allow-file-access-from-files
-- iPad --user-agent="iPad" 

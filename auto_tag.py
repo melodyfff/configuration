@@ -33,6 +33,10 @@ os.chdir(path)
 
 
 def auto():
+    del_loc_branch()
+    del_local_tag()
+    del_ori_tag()
+    new_branch()
     replace()
     commit()
     tag()
@@ -65,6 +69,10 @@ def tags_list():
     run_bash('git tag -l')
 
 
+def new_branch():
+    run_bash('git checkout -b ' + version)
+
+
 def tag():
     run_bash('git tag ' + version)
 
@@ -82,6 +90,10 @@ def tag_push():
 # 推送本地更新
 def push():
     run_bash('git push')
+
+
+def del_loc_branch():
+    run_bash('git branch -D ' + version)
 
 
 # 删除远程branch
@@ -128,5 +140,4 @@ def magic(command):
         print(err)
 
 
-# 主函数
 magic(run)()

@@ -20,7 +20,7 @@ home_git_path = 'gitconfig.my'
 
 # 判断当前配置
 def witch_git_now():
-    with open(home_path + '\\' + current_git, 'r') as f:
+    with open(home_path + os.sep + current_git, 'r') as f:
         for line in f:
             if line.find('proxy') != -1:
                 print ("current git config is : [%s] , change to [%s]" % (home_git_path, office_git_path))
@@ -30,8 +30,8 @@ def witch_git_now():
 
 
 def change_git(file_name):
-    with open(home_path + '\\' + current_git, 'w+') as file_open:
-        with open(home_path + '\\' + file_name, 'r') as file_new:
+    with open(home_path + os.sep + current_git, 'w+') as file_open:
+        with open(home_path + os.sep + file_name, 'r') as file_new:
             for line in file_new:
                 file_open.write(line)
     print ("current git config is : [%s]" % file_name)

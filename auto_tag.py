@@ -33,6 +33,8 @@ os.chdir(path)
 
 
 def auto():
+    pre()
+    pull()    
     del_loc_branch()
     del_local_tag()
     del_ori_tag()
@@ -72,7 +74,15 @@ def tags_list():
 def new_branch():
     run_bash('git checkout -b ' + version)
 
-
+def pull():
+    run_bash('git pull')
+    
+def pre():
+    run_bash('git add -A')
+    run_bash('git commit -m"test"')
+    run_bash('git checkout master')
+    
+    
 def tag():
     run_bash('git tag ' + version)
 
